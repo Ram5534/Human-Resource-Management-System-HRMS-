@@ -17,5 +17,5 @@ app.use("/api/teams", require("./routes/teams"));
 app.use("/api/logs", require("./routes/logs"));
 
 sequelize.sync({ alter: true }).then(() => {
-  app.listen(5000, () => console.log("Server running on 5000"));
+  app.listen(8080, () => console.log("Server running on 8080"));
 });
