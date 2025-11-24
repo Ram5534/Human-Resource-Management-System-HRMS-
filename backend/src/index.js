@@ -16,6 +16,10 @@ app.use("/api/teams", require("./routes/teams"));
 // Logs
 app.use("/api/logs", require("./routes/logs"));
 
+app.get('/',(req,res)=>{
+  res.send("Welcome to Hrms")
+})
+
 sequelize.sync({ alter: true }).then(() => {
   app.listen(8080, () => console.log("Server running on 8080"));
 });

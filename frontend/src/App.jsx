@@ -12,7 +12,7 @@ function App() {
     <Router>
        {token && <Navbar />}
       <Routes>
-        {/* <Route path="/" element={<Navigate to={token ? "/login":""} />} /> */}
+        <Route path="/" element={<Navigate to={token ? "/employees" : "/login"} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterOrg />} />
         <Route path="/employees" element={token ? <Employees /> : <Navigate to="/login" />} />

@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/";
+// const API_URL = "http://localhost:5000/";
+
+const API_URL = "https://hrms-backend-3-0n5w.onrender.com/";
 
 const api = axios.create({
   baseURL: API_URL,
