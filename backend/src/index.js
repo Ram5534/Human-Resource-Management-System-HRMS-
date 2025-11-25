@@ -3,8 +3,9 @@ const app = express();
 const { sequelize } = require("./models");
 const cors = require('cors')
 
-app.use(express.json());
 app.use(cors())
+app.use(express.json());
+
 
 // Auth & Employee routes
 app.use("/api/auth", require("./routes/auth"));
